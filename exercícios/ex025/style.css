@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url('../ex019.1/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+/*
+O Padding normalmente tem 4 medidas, veja abaixo:
+*/
+
+body{
+    font-family: 'Roboto';
+}
+
+h1{
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: lightslategray;
+    /*
+    Shorthand na Border = border: width style color;
+    */
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+   /*
+    Shorthand na Padding = padding: top right bottom left;
+    */
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    /*
+    Shorthand na Margin = margin: top right bottom left;
+    */
+
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: red;
+    /*
+    Shorthand na Outline = border: width style color;
+    */
+
+
+}
+
+a{
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url('../ex019.1/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+/*
+   # = id
+   . = class
+   : = pseudo-class
+  :: = pseudo-element
+   > = children
+*/
+
+body{
+    font-family: 'Roboto';
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+a:active{
+    color: blue;
+}
+
+.especial{
+    background-color: brown;
+}
+
+.especial::before{
+    content: '✘ ';
+}
+
+.especial::after{
+    content: ' ✔';
+}

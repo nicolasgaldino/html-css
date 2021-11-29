@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Testar em vários dispositivos diferentes.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <hr>
+    <h1>Reproduzindo áudio.</h1>
+    <p>Colocando áudio em HTML5.</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay></audio>
+    <p>Esse modo de adicionar áudio na HTML é muito limitado, no meu caso o parâmetro "autoplay", não funcinou.</p>
+    <hr>
+    <h1>Esse é o jeito mais garantido, e provavelmente o que mais irei usar.</h1>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p>Caso seu navegador não reproduza o podcast, infelizmente ele não consegue reproduzir áudio<a href="midia/guanacast-33.mp3">Clique aqui para baixá-lo!</a></p>
+    </audio>
+    <p>Eu não fiz a conversão dos arquivo "mp3", coloquei os outros formatos apenas para me guiar.</p>
+    <hr>
+    <h1>Vídeos em HTML5</h1>
+    <p>Inserindo vídeos de hospedagem local.</p>
+    <video width="560" poster="imagens/limoes-capa.png" controls
+        source src="video/meu-videomp4.mp4" type="video/mp4"
+        source src="video/meu-videoogv.ogv" type="video/ogv">
+    <p>Caso seu navegador não reproduza o vídeo, infelizmente ele não compatibilidade com o formato disponível, por favor<a href="video/meu-videomp4.mp4">Clique aqui para baixá-lo!</a></p>
+    </video>
+    <p>Os vídeos estão totalmente desordenados, qualquer um que veja a HTML irá perceber, mas apenas para me guiar, e deixar para futuras consultas optei por fazer assim para ter visível todas as tags que aprendi.</p>
+    <hr>
+    <h1>Inserindo vídeos de hospedagem externa</h1>
+    <p>Segue de exemplo um vídeo do CanalTech</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_7k1ZqypQgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Esse é o modo mais aconselhável,até mesmo por ser mais barato para o cliente.</p>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url('../ex019.1/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+div{
+    font-family: 'Roboto';
+    background-color: #7c6f6f77;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover{
+    background-color: yellow;
+}
+
+.d1{
+    background-color: black;
+}
+
+.d2{
+    background-color: white;
+}
+
+.d3{
+    background-color: red;
+}

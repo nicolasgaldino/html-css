@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <p>É possivel acessar <a href="https://mangalivre.net/">qualquer site</a>.</p>
+    <p>Nesse caso a tag &lt;a&gt; faz o site aberto atráves do link se sobrepôr a minha página, esse é o menos recomendado a se usar, a menos que seja um link para outra sessão dentro do mesmo site.</p>
+    <hr>
+    <h1>Links Externos em uma nova guia</h1>
+    <p>Para acessar <a href="https://mangalivre.net/" target="_blank" rel="external">qualquer link</a> criando uma nova guia no navegador, usa-se "target=_blank rel=external", dentro da tag &lt;a&gt;.</p>
+    <hr>
+    <h1>Links Internos</h1>
+    <p>São links usados para navegar por tópicos dentro do meu servidor, não tem diferença entre usar ou não "target=_blank rel=external", dentro da tag &lt;a&gt;, mas recomenda-se usar "rel=next", ou "rel=prev", para "dizer", ao mecânismo do navegador qual a pagina anterior, ou qual a próxima página.</p>
+    <p>Está é a minha <a href="pag002.html" rel="next">segunda página.</a>
+    <hr>
+    <h1>Links Internos em outra pasta</h1>
+    <p>Esse explicação só fica visível pelo <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+    <p>Para acessar minha página de notícias <a href="noticias/pag003.html" rel="next">clique aqui.</a></p>
+    <hr>
+    <h1>Links para Downloads</h1>
+    <p>Seguem links de exemplos, apenas. <br> Links anexados para treinar os códigos.</p>
+    <p>Alguns links não como do PDF, por exemplo, o Chrome não faz odownload, já que ele reocnhece o arquivo, ele apenas abre PDF. <br>Arquivos que o navegador, não reconhece são baixados como, por exemplo, o ZIP do arquivo PDF.</p>
+    <ul>
+        <li><a href="livro/07 - Hierarquia de títulos.pdf">Baixar PDF do livro.</a></li>
+        <li><a href="livro/07 - Hierarquia de títulos.zip" download="07 - Hierarquia de títulos.zip" type="application.zip">PDF compactado.</a></li>
+    </ul>
+</body>
+</html>

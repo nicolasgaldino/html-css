@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url('../ex019.1/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Roboto';
+}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url('../ex019.1/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+/*
+em HTML é id, em CSS é #
+em HTML é class em CSS é .
+*/
+
+body{
+    font-family: 'Roboto';
+    background-color: #B6CDE3;
+}
+
+#principal{
+    text-align: center;
+    background-color: #717ad9a1;
+}
+
+h1,h2{
+    text-align: left;
+    color: #0F0BD9;
+}
+
+.paragrafo{
+    text-align: justify;
+}
+
+.basico{
+    text-align: center;
+    color: #D90BAE;
+}
+
+.intermediario{
+    text-align: center;
+    color: #C00BE3;
+}
+
+.avancado{
+    text-align: center;
+    color: #7400CC;
+}
